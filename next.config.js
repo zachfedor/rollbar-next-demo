@@ -20,7 +20,7 @@ module.exports = {
     config.plugins.push(new RollbarSourceMapPlugin({
       accessToken: process.env.ROLLBAR_SERVER_TOKEN,
       version: buildId,
-      publicPath: "http://localhost:3000/_next",
+      publicPath: "https://rollbar-next-demo.vercel.app/_next/",
     }));
 
     return config;
