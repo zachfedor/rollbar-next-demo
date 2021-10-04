@@ -4,8 +4,8 @@ import { MakeError } from "./MakeError";
 const Child = ({ children, level }) => <div id={level}>{children}</div>;
 
 const DeepNest = () => {
-  const onClick = () => {
-    throw new Error("Something happened");
+  const onClick = (event) => {
+    event.doesntExist();
   };
 
   return (
