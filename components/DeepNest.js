@@ -5,7 +5,7 @@ const Child = ({ children, level }) => <div id={level}>{children}</div>;
 
 const DeepNest = () => {
   const onClick = () => {
-    throw new Error("Ouch");
+    throw new Error("Something happened");
   };
 
   return (
