@@ -17,7 +17,7 @@ class MyDocument extends Document {
               captureUncaught: true,
               captureUnhandledRejections: true,
               payload: {
-                  environment: "production",
+                  environment: "${process.env.NODE_ENV}",
                   client: {
                     javascript: {
                       source_map_enabled: true,
