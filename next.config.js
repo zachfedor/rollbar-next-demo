@@ -18,7 +18,7 @@ module.exports = {
     }));
 
     config.plugins.push(new RollbarSourceMapPlugin({
-      accessToken: JSON.stringify(process.env.ROLLBAR_SERVER_TOKEN),
+      accessToken: process.env.ROLLBAR_SERVER_TOKEN,
       version: buildId,
       publicPath: "http://localhost:3000/_next",
     }));
